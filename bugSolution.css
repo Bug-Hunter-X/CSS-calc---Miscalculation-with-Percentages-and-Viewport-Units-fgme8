@@ -1,0 +1,12 @@
+/* Solution: Avoid mixing percentages and viewport units within the same calc() expression.  Use absolute units (pixels, ems, etc.) instead.
+Alternatively, break down the calculation into separate steps. */
+
+#myElement {
+  width: calc(50vw + 100px); /* Use absolute units for reliable calculation */
+}
+
+/* Or:
+#myElement {
+  width: 50vw;
+  margin-left: 100px;
+} */
